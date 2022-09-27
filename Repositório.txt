@@ -1,0 +1,1 @@
+Estrutura de pastas para organizar melhor cada parte do curso.
