@@ -4,6 +4,7 @@ import java.net.URI;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,7 +37,7 @@ public class CategoriaResource {
 	//MÉTODO PARA SALVAR UMA NOVA CATEGORIA
 	
 	@PostMapping
-	public ResponseEntity<Categoria> toInsert(@RequestBody Categoria categoria, HttpServletResponse response){
+	public ResponseEntity<Categoria> toInsert(@Valid @RequestBody Categoria categoria, HttpServletResponse response){
 		Categoria categoriaSalv = categoriaRepor.save(categoria);
 		
 		URI uri = ServletUriComponentsBuilder.fromCurrentServletMapping().path("{/codigo}")
