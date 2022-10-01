@@ -2,10 +2,8 @@ package com.financeManagement.api.resource;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Locale.Category;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.websocket.server.PathParam;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -48,6 +46,9 @@ public class CategoriaResource {
 		return ResponseEntity.created(uri).body(categoriaSalv);
 	};
 	
+	
+	//MÉTODO PARA BUSCAR POR ID.
+	
 	@GetMapping("/{codigo}")
 	public ResponseEntity<Categoria> toSearch(@PathVariable Long codigo) {
 		
@@ -55,13 +56,10 @@ public class CategoriaResource {
 				.map(category -> ResponseEntity.ok().body(category))
 				.orElse(ResponseEntity.notFound().build());
 		
-		 
-		
-		  
-		
-		
-		
-	}
+	};
+	
+	
+	
 	
 	
 	
