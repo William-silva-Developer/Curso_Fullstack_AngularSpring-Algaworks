@@ -1,4 +1,4 @@
-package com.financeManagement.api.model;
+package com.financeManagement.domain.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -29,6 +30,7 @@ public class Categoria {
 	@EqualsAndHashCode.Include
 	private Long codigo;
 	
+	@Valid 
 	@Column(name = "nome")
 	@NotBlank
 	@Size(min = 3, max = 30)
