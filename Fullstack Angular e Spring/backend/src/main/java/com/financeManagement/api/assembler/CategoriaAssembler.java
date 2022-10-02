@@ -1,5 +1,8 @@
 package com.financeManagement.api.assembler;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
@@ -17,6 +20,27 @@ public class CategoriaAssembler {
 	public CategoriaDto toModel(Categoria categoria) {
 		
 		return modelMepper.map(categoria, CategoriaDto.class);
+	};
+	
+	
+	public List<CategoriaDto> toCollectionDto(List<Categoria> array){
+		return array.stream()
+				.map(this::toModel)
+				.collect(Collectors.toList());
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
