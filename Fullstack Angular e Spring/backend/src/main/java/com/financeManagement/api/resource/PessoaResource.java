@@ -17,8 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.financeManagement.api.assembler.PessoaAssembler;
+import com.financeManagement.api.modelDto.PessoaDto;
 import com.financeManagement.domain.model.Pessoa;
 import com.financeManagement.domain.repository.PessoaRepository;
+import com.financeManagement.domain.services.PessoaService;
 
 import lombok.AllArgsConstructor;
 
@@ -29,11 +32,15 @@ public class PessoaResource {
 	
 	private PessoaRepository pessoaRepor;
 	
+	private PessoaService pessoaService;
+	
+	private PessoaAssembler pessoaAssembler;
+	
 	// MÉTODO PARA LISTAR
 	
 	@GetMapping
-	public List<Pessoa> List() {
-		return pessoaRepor.findAll();
+	public List<PessoaDto> List() {
+		return pessoaAssembler.toCollection(pessoaService.list());
 	};
 	
 	//MÉTODO PARA BUSCAR POR CÓDIGO

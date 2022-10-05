@@ -17,23 +17,25 @@ public class PessoaService {
 	
 	private PessoaRepository pessoaRepor;
 	
-	
+	//LISTAR AS PESSOAS
 	@Transactional
 	public List<Pessoa> list(){
 		return pessoaRepor.findAll();
 	};
 	
+	//SALVAR UMA PESSOA
 	@Transactional
 	public Pessoa save(Pessoa pessoa) {
 		return pessoaRepor.save(pessoa);
 	};
 	
-	
+	//PESQUISAR POR CÓDIGO UMA PESSOA
 	@Transactional
 	public Optional<Pessoa> search(Long codigo){
 		return pessoaRepor.findById(codigo);
 	};
 	
+	//PARA DELETAR UMA PESSOA POR CÓDIGO
 	@Transactional
 	public void delete(Long codigo) {
 		pessoaRepor.deleteById(codigo);

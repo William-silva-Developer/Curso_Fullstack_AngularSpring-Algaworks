@@ -8,9 +8,12 @@ import lombok.Setter;
 public class PessoaDto {
 	
 	private Long codigo;
+	
 	private String nome;
+	
 	private Boolean ativo;
-	private String logradouro;
+	
+	
 	
 
 }
