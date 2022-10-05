@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
+  name: string = "william";
+  nome: string = "Angular.";
+
   constructor() { }
 
   ngOnInit(): void {
