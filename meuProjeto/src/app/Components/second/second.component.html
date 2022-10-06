@@ -1,14 +1,18 @@
 <div class="container">
   <div class="alert alert-success" role="alert">
-      Funcionário adicionado: <strong>{{name}}</strong>
+      Funcionário adicionado: <strong>{{nome}}</strong>
   </div>
 
   <div class="form-group">
-      <label>Nome</label>
-      <input type="text" class="form-control" #nomeInput>
+      <label>Nome</label>                         <!--USANDO TWO-WAY DATA BINDING [(ngModel)]-->
+      <input type="text" class="form-control" #nameInput [(ngModel)]="nome" />
+
   </div>
 
   <button type="button" class="btn btn-primary"
-      (click)="adicionar(nomeInput.value)">Adicionar</button>
+      (click)="adicionando(nameInput.value)" [disabled]="nome.length == 0">Adicionar</button>
 
 </div>
+<br />
+<br />
+<hr />

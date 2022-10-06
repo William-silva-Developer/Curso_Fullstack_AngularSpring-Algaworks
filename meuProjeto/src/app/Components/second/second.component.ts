@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SecondComponent implements OnInit {
 
 
-  name!: string;
+  
+  nome!: string;
 
-adicionar(name: string){
 
-  this.name =name;
-
-}
+adicionando(nome: string){
+  this.nome = nome;
+};
 
 
   constructor() { }
