@@ -94,7 +94,7 @@ public class PessoaResource {
 		return ResponseEntity.noContent().build();
 		
 	
-	}
+	};
 	
 	
 

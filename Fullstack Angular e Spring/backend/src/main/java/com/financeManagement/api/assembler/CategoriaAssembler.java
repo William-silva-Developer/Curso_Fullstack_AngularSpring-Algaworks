@@ -27,7 +27,7 @@ public class CategoriaAssembler {
 		return array.stream()
 				.map(this::toModel)
 				.collect(Collectors.toList());
-	}
+	};
 	
 	
 	

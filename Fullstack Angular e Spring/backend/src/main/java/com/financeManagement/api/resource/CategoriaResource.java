@@ -96,7 +96,7 @@ public class CategoriaResource {
 		
 		categoriaService.toDelete(codigo);
 		return ResponseEntity.noContent().build();
-	}
+	};
 	
 	
 
