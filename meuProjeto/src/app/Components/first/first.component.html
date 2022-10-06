@@ -12,3 +12,21 @@
     </div>
   </div>
 </div>
+<br />
+<hr />
+<div class="container">
+  <div class="alert alert-success" role="alert">
+      Funcionário adicionado: <strong>{{name}}</strong>
+  </div>
+
+  <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input type="text" class="form-control"
+          (input)="alterarNome($event)"
+          >
+  </div>
+
+  <button type="button" class="btn btn-primary"
+      (click)="adicionar()">Adicionar</button>
+
+</div>
