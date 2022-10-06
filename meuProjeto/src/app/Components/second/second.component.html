@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="alert alert-success" role="alert">
+  <!--Exibindo condicionalmente com as diretivas ngIf-->
+  <div class="alert alert-success" role="alert" *ngIf="adicionado">
       Funcionário adicionado: <strong>{{nome}}</strong>
   </div>
 

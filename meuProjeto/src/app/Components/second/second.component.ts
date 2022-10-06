@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class SecondComponent implements OnInit {
 
 
-  
+
   nome!: string;
+  adicionado: boolean = false;
 
 
 adicionando(nome: string){
   this.nome = nome;
+  this.adicionado = true;
 };
 
 
