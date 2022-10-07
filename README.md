@@ -8,7 +8,7 @@ Este é um repositório do curso de Fullstack realizado na Algaworks. O curso é
 
 ### Javascript
 
-O módulo de Javascript tem o objetivo de ensinar um pouco sobre os itens mais usados de javascript como também ajuda a dá uma atualizada em vários conceitos pode está meio esquecido. Nesse módulo podemos ver laços, funções, classes entre outras coisas.
+Este módulo tem o objetivo de ensinar um pouco sobre os itens mais usados de javascript como também ajuda a dá uma atualizada em vários conceitos pode está meio esquecido. Nesse módulo podemos ver laços, funções, classes entre outras coisas.
 
 #
 
