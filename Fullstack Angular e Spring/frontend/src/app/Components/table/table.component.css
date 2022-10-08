@@ -1,1 +1,23 @@
 
+.p-col-12 .col-data-header{
+  font-weight: bold;
+  color: #0cce16;
+  background: #e7e4e4;
+}
+
+.p-col-12 .col-valor-header{
+  color: #0cce16;
+  background: #e7e4e4;
+
+}
+
+.col-acoes{
+  width: 120px;
+}
+.col-acoes > a {
+  margin-right: 5px;
+}
+
+.p{
+  margin-top: .5rem;
+}

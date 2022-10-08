@@ -3,22 +3,32 @@
       <p-table  [value]="lancamentos">
           <ng-template pTemplate="header">
               <tr>
-                  <th >Pessoa</th>
-                  <th>Descrição</th>
+                  <th class="col-data-header" >Pessoa</th>
+                  <th class="col-data-header">Descrição</th>
                   <th class="col-data-header">Vencimento</th>
                   <th class="col-data-header">Pagamento</th>
                   <th class="col-valor-header">Valor</th>
+                  <th class="col-valor-header"></th>
               </tr>
           </ng-template>
-          <ng-template pTemplate="body" let-lancamento>
+          <ng-template pTemplate="body" let-lancamento >
               <tr>
                   <td>{{ lancamento.pessoa }}</td>
                   <td>{{ lancamento.descricao }}</td>
                   <td class="col-data-content">{{ lancamento.dataVencimento }}</td>
                   <td class="col-data-content">{{ lancamento.dataPagamento }}</td>
-                  <td class="col-valor-content">{{ lancamento.valor }}</td>
+                  <td class="col-valor-content" [style.color]="lancamento.tipo === 'DESPESA'?'red':'blue'">{{ lancamento.valor }}</td>
+                  <td class="col-acoes">
+                    <a pButton icon="pi pi-pencil"></a>
+                    <button pButton icon="pi pi-trash"></button>
+                  </td>
+
               </tr>
           </ng-template>
       </p-table>
+      <div class="p-col-12 p-md-col-6 p-lg-col-3 p">
+        <button pButton label="Novo Lançamento" type="button" ></button>
+
+      </div>
 
 </div>
