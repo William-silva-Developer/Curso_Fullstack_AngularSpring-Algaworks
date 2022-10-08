@@ -17,6 +17,8 @@ export class DiretivaComponent implements OnInit {
 
 
 
+
+
   adicionar(){
     console.log(`Adicionando ${this.nome}`);
     this.adicionado = true;
