@@ -10,7 +10,8 @@ import {AccordionModule} from 'primeng/accordion';
 import {ButtonModule} from 'primeng/button'
 import {InputTextModule} from 'primeng/inputtext';
 import { TableComponent } from './Components/table/table.component';
-import {TableModule} from 'primeng/table'
+import {TableModule} from 'primeng/table';
+import { PaginatorModule } from 'primeng/paginator';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {TableModule} from 'primeng/table'
     AccordionModule,
     ButtonModule,
     InputTextModule,
-    TableModule
+    TableModule,
+    PaginatorModule
 
   ],
   providers: [],
