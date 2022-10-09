@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+//COMPONENTES
+import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FormComponent } from './Components/form/form.component';
+import { TableComponent } from './Components/table/table.component';
 
 //IMPORTAÇÕES DO PRIMENG
 import {AccordionModule} from 'primeng/accordion';
 import {ButtonModule} from 'primeng/button'
 import {InputTextModule} from 'primeng/inputtext';
-import { TableComponent } from './Components/table/table.component';
 import {TableModule} from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { TooltipModule } from 'primeng/tooltip';
@@ -19,7 +23,8 @@ import { TooltipModule } from 'primeng/tooltip';
   declarations: [
     AppComponent,
     FormComponent,
-    TableComponent
+    TableComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
