@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 
 //COMPONENTES
 import { NavbarComponent } from './Components/navbar/navbar.component';
-import { FormComponent } from './Components/form/form.component';
-import { TableComponent } from './Components/table/table.component';
+import { LancamentoComponent } from './Components/pages/lancamentos/lancamento/lancamento.component';
 
 //IMPORTAÇÕES DO PRIMENG
 import {AccordionModule} from 'primeng/accordion';
@@ -17,14 +16,18 @@ import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { TooltipModule } from 'primeng/tooltip';
+import { PessoaComponent } from './Components/pages/pessoas/pessoa/pessoa.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-    TableComponent,
-    NavbarComponent
+    NavbarComponent,
+    LancamentoComponent,
+    PessoaComponent
+
+
+
   ],
   imports: [
     BrowserModule,

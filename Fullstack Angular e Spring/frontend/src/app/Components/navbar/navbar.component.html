@@ -1,9 +1,24 @@
-<nav class="navbar">
+<nav class="navbar bg-blue-700">
   <div class="container">
     <div class="grid">
       <div class="p-col-12">
-        <a href="javascript:;" class="navbar-icons"><i class="pi pi-bars"></i></a>
+        <a href="javascript:;" class="navbar-icons"   (click)="exibirMenu = !exibirMenu"><i class="pi pi-bars"></i></a>
       </div>
     </div>
+
+
   </div>
+  <div class="menu-sub" >
+    <ul class="navbar-menu" *ngIf="exibirMenu ? true : false">
+      <li class="menu-user"><a href="#">Administrador</a></li>
+      <li class="menuItem"><a href="#">çamentos</a></li>
+      <li class="menuItem"><a href="#">Pessoas</a></li>
+      <li class="menuItem"><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+
+
 </nav>
+
+

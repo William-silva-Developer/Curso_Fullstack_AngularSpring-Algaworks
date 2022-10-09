@@ -1,4 +1,34 @@
-<div class="p-col-12">
+
+  <div class="p-col-12 p-md-col-6 p-lg-col-3">
+
+
+    <h1>Lançamentos</h1>
+
+
+  <div class="col-12 p-fluid">
+    <label>Descrição</label>
+    <input pInputText type="text">
+  </div>
+
+  <div class="col-12">
+    <label class="block">Vencimento</label>
+    <input pInputText type="text" style="width: 95px">
+
+    <label class="label">até</label>
+    <input pInputText type="text" style="width: 95px">
+  </div>
+
+  <div class="col-12">
+    <button pButton type="submit" label="Pesquisar"></button>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="p-col-12 p-md-col-6 p-lg-col-3">
 
   <p-table [value]="lancamentos" [paginator]="true" [rows]="4"
   [responsive]="true">
