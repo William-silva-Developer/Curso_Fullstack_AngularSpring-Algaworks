@@ -12,6 +12,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import { TableComponent } from './Components/table/table.component';
 import {TableModule} from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PaginatorModule } from 'primeng/paginator';
     ButtonModule,
     InputTextModule,
     TableModule,
-    PaginatorModule
+    PaginatorModule,
+    TooltipModule
 
   ],
   providers: [],
