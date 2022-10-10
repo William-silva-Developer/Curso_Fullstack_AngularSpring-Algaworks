@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 //COMPONENTES
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { LancamentoComponent } from './Components/pages/lancamentos/lancamento/lancamento.component';
+import { PessoaComponent } from './Components/pages/pessoas/pessoa/pessoa.component';
+
+//DIRETIVA
+import { DirectiveDirective} from './Components/directive/directive.directive';
 
 //IMPORTAÇÕES DO PRIMENG
 import {AccordionModule} from 'primeng/accordion';
@@ -16,7 +20,8 @@ import {InputTextModule} from 'primeng/inputtext';
 import {TableModule} from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { TooltipModule } from 'primeng/tooltip';
-import { PessoaComponent } from './Components/pages/pessoas/pessoa/pessoa.component';
+import {FocusTrapModule} from 'primeng/focustrap';
+
 
 
 @NgModule({
@@ -24,7 +29,8 @@ import { PessoaComponent } from './Components/pages/pessoas/pessoa/pessoa.compon
     AppComponent,
     NavbarComponent,
     LancamentoComponent,
-    PessoaComponent
+    PessoaComponent,
+    DirectiveDirective
 
 
 
@@ -37,7 +43,8 @@ import { PessoaComponent } from './Components/pages/pessoas/pessoa/pessoa.compon
     InputTextModule,
     TableModule,
     PaginatorModule,
-    TooltipModule
+    TooltipModule,
+    FocusTrapModule
 
   ],
   providers: [],
