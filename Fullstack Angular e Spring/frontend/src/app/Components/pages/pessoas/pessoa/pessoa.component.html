@@ -1,0 +1,67 @@
+
+  <div class="p-col-12 p-md-col-6 p-lg-col-3">
+
+
+    <h1>Pessoas</h1>
+
+
+  <div class="col-12 p-fluid">
+    <label>Nome</label>
+    <input pInputText type="text" appDirective >
+  </div>
+  <div class="col-12">
+    <button pButton type="submit" label="Pesquisar"></button>
+  </div>
+
+</div>
+
+<div class="p-col-12">
+
+  <p-table [value]="lancamentos" [paginator]="true" [rows]="4"
+  [responsive]="true">
+<ng-template pTemplate="header">
+  <tr>
+    <th class="col-data-header">Nome</th>
+    <th class="col-data-header">Cidade</th>
+    <th class="col-data-header">Estado</th>
+    <th class="col-data-header">Status</th>
+    <th class="col-data-header"></th>
+
+
+  </tr>
+</ng-template>
+<ng-template pTemplate="body" let-lancamento>
+  <tr>
+    <td>
+      <span class="p-column-title">Nome</span>
+      {{ lancamento.Nome }}
+    </td>
+    <td>
+      <span class="p-column-title">Cidade</span>
+      {{ lancamento.Cidade }}
+    </td>
+    <td class="col-data">
+      <span class="p-column-title">Estado</span>
+      {{ lancamento.Estado }}
+    </td>
+    <td class="col-data" [pTooltip]="lancamento.Ativo ? 'Desativar' : 'Ativar'"  tooltipPosition="left">
+      <span class="p-column-title" >Status</span>
+      <a href="#">{{ lancamento.Ativo ? 'Ativo' : 'Inativo' }}</a>
+
+    </td>
+
+    <td class="col-acoes">
+      <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top"></a>
+      <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top"></button>
+    </td>
+  </tr>
+</ng-template>
+</p-table>
+      <div class="p-col-12  p">
+        <button pButton label="Novo Lançamento" type="button" ></button>
+
+      </div>
+
+</div>
+
+

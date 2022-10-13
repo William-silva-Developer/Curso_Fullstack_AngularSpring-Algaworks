@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0cce16;
+  background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), no-repeat url('http://blog.multigrupo.com.br/wp-content/uploads/2019/09/Esportivo-ou-esportivado-1170x545.jpg');
+  height: 100%;
+  background-size: cover;
+}
+
+label {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+
+  }
+}
+
+.navbar-menu a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+

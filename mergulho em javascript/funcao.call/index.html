@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function soma(A, B) {
+            console.log(this)
+            return A + B;
+            
+        };
+
+        const obj = {nome: 'Paulo'};
+
+        /*FORMAS DE EXERCUTAR NO CONSOLE: 
+        USANDO O CALL: soma.call(obj, 2,4)
+        USANDO O APPLY: soma.call(obj, [2,4])*/
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -6,12 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './Components/first/first.component';
 import { SecondComponent } from './Components/second/second.component';
+import { DiretivaComponent } from './Components/diretiva/diretiva.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    DiretivaComponent
+
   ],
   imports: [
     BrowserModule,
