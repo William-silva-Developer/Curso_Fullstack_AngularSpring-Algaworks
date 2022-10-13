@@ -1,5 +1,7 @@
 package com.financeManagement.api.modelDto;
 
+import javax.persistence.Embedded;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +14,9 @@ public class PessoaDto {
 	private String nome;
 	
 	private Boolean ativo;
+	
+	@Embedded
+	private EnderecoDto endereco;
 	
 	
 	

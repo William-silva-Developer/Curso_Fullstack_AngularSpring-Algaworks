@@ -6,7 +6,6 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +24,6 @@ import com.financeManagement.domain.repository.CategoriaRepository;
 import com.financeManagement.domain.services.CategoriaService;
 
 import lombok.AllArgsConstructor;
-import lombok.Delegate;
 
 @AllArgsConstructor
 @RequestMapping("/categorias")
